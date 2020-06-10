@@ -23,7 +23,8 @@ export default function Jobs() {
   let [keyword, setKeyword] = useState(query.get(QUERYSTR_PREFIX)); // capture keyword from input
 
   const getData = async () => {
-    let url = `http://localhost:3001/jobs`;
+    //let url = `http://localhost:3001/jobs`;
+    let url = `https://my-json-server.typicode.com/legobitna/itviec-mojave` 
     let data = await fetch(url);
     let result = await data.json();
     console.log("rr", result);
